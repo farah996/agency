@@ -12,14 +12,14 @@ header {
 
 header .overlay {
     background: linear-gradient(to right, rgba(41, 153, 155, 0.8) 0%, rgba(167, 173, 44, 0.8) 100%);
-    height: 100%;
+    height: 100vh;
 }
 
 
 /* تضمين الخط الجديد في الصفحة */
 
 @font-face {
-    font-family: ar-font;
+    font-family: font awesome 5 Free;
     src: url(../fonts/Cairo-Regular.ttf);
 }
 
@@ -29,6 +29,7 @@ header .overlay {
 body {
     direction: rtl;
     font-family: ar-font;
+    overflow-x: hidden;
 }
 
 
@@ -79,7 +80,8 @@ nav.navbar .navbar-brand img {
 /*بداية نسيقات "بشكل ديناميكي" تغيير لون العناصر في القائمة بعد النزول إلى الأسفل */
 
 nav.navbar.noTransparrent ul.navbar-nav li a.nav-link {
-    color: #16aeca;
+    color: #4a71db;
+    text-align: center;
 }
 
 
@@ -158,8 +160,8 @@ header .overlay .slider .carousel-inner .carousel-item .carousel-caption a {
     padding: 0px 2rem;
     margin-top: 30px;
     display: inline-block;
-    transition: all 1s ease;
     transform: translateY(50px);
+    transition: all 1s ease;
 }
 
 header .overlay .slider .carousel-inner .carousel-item .carousel-caption a {
@@ -708,6 +710,7 @@ footer .copyright p {
 @media (max-width: 767px) {
     nav.navbar .container {
         /* ليصبح حجم الحاوى مساوي لحجم الشاشة */
+        max-width: 100%;
         max-width: 100%;
         /* bootstrap لتبديل اماكن العناصر فى القائمة و لتتناسب مع النسخة الحديثة من */
         flex-direction: row-reverse;
